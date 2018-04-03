@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+exec dalvikvm \
+	-Xmx256m \
+	-cp ${PREFIX}/share/dex/com.amsitlab.smsid.Send.dex \
+	com.amsitlab.smsid.Send $@
